@@ -3,7 +3,8 @@
 
 to start just type something like that:
 ```
-build.sh
+chmod u+x build.sh
+./build.sh
 ```
 to start after the build is complete
 ```
