@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as builder
+FROM ubuntu:22.04
 
 MAINTAINER 1582421598
 
@@ -13,7 +13,5 @@ RUN apt-get update && apt-get -y install build-essential automake openssl libssl
 ENV LANG=en_US.UTF-8
 
 WORKDIR /app/docker/my-tengine
-
-EXPOSE 80 443
 
 CMD /app/docker/my-tengine/sbin/nginx -g "daemon off;"
