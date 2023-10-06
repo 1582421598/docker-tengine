@@ -1,4 +1,4 @@
-BASE_DIR=$(dirname "$0")
+BASE_DIR=$(realpath $(dirname "$0"))
 mkdir "$BASE_DIR/my-tengine"
 cd "$BASE_DIR/my-tengine"
 wget https://github.com/1582421598/tengine/archive/refs/heads/master.zip -O tengine.zip
